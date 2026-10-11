@@ -3,6 +3,10 @@ package javaoop;
 public class ShopKeeper {
 	String name_;
 
+	public ShopKeeper(String name) {
+		name_ = name;
+	}
+
 	//価格をチェックする
 	public void checkPrice(CarToy kuruma1, CarToy kuruma2, TrainToy densya1) {
 		System.out.println("商品コード:" + name_ + "です。");
@@ -11,7 +15,7 @@ public class ShopKeeper {
 
 		System.out.println(kuruma2.code_ + kuruma2.price_);
 
-		System.out.println(densya1.code_ + densya1.price_);
+		System.out.println(densya1.code_ + densya1.pricinte_);
 		System.out.println("￥");
 	}
 

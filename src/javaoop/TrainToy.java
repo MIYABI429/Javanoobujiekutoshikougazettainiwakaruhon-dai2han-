@@ -2,7 +2,13 @@ package javaoop;
 
 public class TrainToy {
 	String code_; //商品コード
-	int price_; //価格
+	int pricinte_; //価格
+
+	public TrainToy(String code, int pricinte) {
+		code_ = code;
+		pricinte_ = pricinte;
+
+	}
 
 	//走る
 	public void go() {
