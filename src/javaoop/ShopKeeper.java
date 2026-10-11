@@ -1,7 +1,7 @@
 package javaoop;
 
 public class ShopKeeper {
-	String name_;
+	private String name_;
 
 	public ShopKeeper(String name) {
 		name_ = name;
@@ -11,11 +11,11 @@ public class ShopKeeper {
 	public void checkPrice(CarToy kuruma1, CarToy kuruma2, TrainToy densya1) {
 		System.out.println("商品コード:" + name_ + "です。");
 
-		System.out.println("商品コード:" + kuruma1.code_ + kuruma1.price_ + "です。");
+		System.out.println("商品コード:" + kuruma1.getcode() + kuruma1.getprice() + "です。");
 
-		System.out.println(kuruma2.code_ + kuruma2.price_);
+		System.out.println(kuruma2.getcode() + kuruma2.getprice());
 
-		System.out.println(densya1.code_ + densya1.pricinte_);
+		System.out.println(densya1.getcode() + densya1.getcode());
 		System.out.println("￥");
 	}
 
