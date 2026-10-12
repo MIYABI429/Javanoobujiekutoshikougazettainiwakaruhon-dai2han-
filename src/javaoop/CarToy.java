@@ -4,24 +4,24 @@ public class CarToy {
 	private String code_; //商品コード
 	private int price_; //価格
 
+	//public CarToy(){}
+	//コンストラクタ
 	public CarToy(String code, int price) {
 		code_ = code;
 		price_ = price;
-
 	}
 
-	public String getcode() {
+	public String getCode() {
 		return code_;
-
 	}
 
-	public int getprice() {
+	public int getPrice() {
 		return price_;
 	}
 
-	public void setPrice(int newprice) {
-		if (newprice > 0) {
-			price_ = newprice;
+	public void setPrice(int newPrice) {
+		if (newPrice > 0) {
+			price_ = newPrice;
 		} else {
 			//エラー時の処理
 		}
@@ -29,11 +29,10 @@ public class CarToy {
 
 	//走る
 	public void go() {
-		System.out.println("ガタンゴトン");
-
+		System.out.println("ブロローッ");
 	}
 
-	//ライトを付ける
+	//ライトを点ける
 	public void light() {
 		System.out.println("ピカーッ");
 	}
